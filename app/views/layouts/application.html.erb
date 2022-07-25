@@ -6,10 +6,16 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <%# this loads Sprockets/Rails asset pipeline %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+
+    <%# this loads JS from importmaps %>
+    <%= javascript_importmap_tags %>
   </head>
 
   <body>
+    <%= render 'layouts/partials/navbar' %>
+
     <%= yield %>
   </body>
 </html>
