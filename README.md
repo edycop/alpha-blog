@@ -24,14 +24,3 @@ Things you may want to cover:
 * ...
 
 
-app/views/articles/index.html.erb
-<div id="articles">
-  <% @articles.each do |article| %>
-    <%= render article %>
-    <p>
-      <%= link_to "Show this article", article %>
-    </p>
-  <% end %>
-</div>
-
-
