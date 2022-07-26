@@ -9,3 +9,5 @@ p 'Seeding the database ...'
 
 Article.create(title: 'Elixir as the last functional programming language', description: 'This blog post is realated to Elixir programming language')
 Article.create(title: 'Ruby 3 and hotwired', description: 'Hotwired has become an usefull tool to avoid Javascript scripts')
+
+User.create(username: 'ecaldon', email: 'ecaldon@gmail.com')
