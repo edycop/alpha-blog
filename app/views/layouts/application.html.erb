@@ -15,8 +15,12 @@
 
   <body class="d-flex flex-column min-vh-100">
     <%= render 'layouts/partials/navbar' %>
-    <%= render 'layouts/partials/messages' %>
+    <div class="page-content">
+      <%= render 'layouts/partials/messages' %>
 
-    <%= yield %>
+      <%= yield %>
+    </div>
+
+    <%= render 'layouts/partials/footer' %>
   </body>
 </html>
