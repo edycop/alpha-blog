@@ -41,6 +41,7 @@ gem "bootsnap", require: false
 
 gem 'bootstrap', '~> 5.2.0'
 
+gem 'rexml', require: false
 gem 'will_paginate', '~> 3.3', '>= 3.3.1'
 
 # Use Sass to process CSS
@@ -55,6 +56,8 @@ group :development, :test do
 
   # Use sqlite3 as the database for Active Record
   gem "sqlite3", "~> 1.4"
+
+  gem 'rspec-rails'
 end
 
 group :development do
@@ -73,6 +76,8 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
+  gem "rspec"
+  gem 'rails-controller-testing'
 end
 
 
