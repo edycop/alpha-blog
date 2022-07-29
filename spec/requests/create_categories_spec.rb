@@ -4,6 +4,16 @@ require 'rails_helper'
 
 # Integration test for create a new category
 RSpec.describe 'CreateCategories', type: :request do
+  before(:each) do
+    @admin_user =
+      User.create(
+        username: 'caldon', email: 'ecaldon@gmail.com',
+        password: 'password', admin: true
+      )
+
+    sign_in_as(@admin_user)
+  end
+
   describe 'GET a new category form and create category' do
     subject { post categories_path(params: { category: { name: 'Sports' } }) }
 
