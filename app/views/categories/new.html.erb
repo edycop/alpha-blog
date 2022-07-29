@@ -1,2 +1,11 @@
 <h1 class="text-center mt-4">Create a new category</h1>
-<%= render "form" %>
+
+<div class="container">
+  <div class="row justify-content-center">
+      <%= render 'shared/errors', obj: @category %>
+
+      <%= render "form" %>
+
+      <%= link_to "[ Cancel and return to categories listing ]", categories_path, class: "text-center text-info mb-3" %>
+  </div>
+</div>
