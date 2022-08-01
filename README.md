@@ -18,9 +18,9 @@ You can see an oline demo of this app on [alpha-blog-1001.herokuapp.com](https:/
 - Install sqlite3 to create the database
 - Clone this repository
 - Execute `bundle install` to install all dependences.
-- Run `rails db:setup` to create and and migrate the DB schema.
-- Edit `db/seeds.rb` to create the first data in your app
-- Run `rails db:seed` to load the initial data.
+- Run `rails db:migrate` to load all migrations.
+- Edit `db/seeds.rb` to load the first data in your app
+- Run `rails db:setup` to create, seed and and load the DB schema.
 - `rails s` to launch the web app.
 
 Finally visit http://localhost:3000/ in the web browser to interact with the app.
